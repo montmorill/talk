@@ -1,4 +1,4 @@
-name: Deploy
+name: deploy to gh pages
 
 on:
   push:
@@ -13,10 +13,12 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - run: npm install
+      - run: |
+          npm install pnpm
+          pnpm install
 
       - name: Build
-        run: npm run slidev build --dist talk
+        run: pnpm build --base talk
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

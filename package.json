@@ -1,0 +1,24 @@
+{
+  "name": "cuisine",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "slidev build",
+    "dev": "slidev --open",
+    "export": "slidev export"
+  },
+  "dependencies": {
+    "@primeuix/themes": "1.0.0-rc.1",
+    "@slidev/cli": "^51.3.0",
+    "@slidev/theme-bricks": "^0.25.0",
+    "@slidev/theme-default": "latest",
+    "@slidev/theme-seriph": "latest",
+    "primevue": "^4.2.5",
+    "slidev-theme-neversink": "^0.3.6",
+    "slidev-theme-penguin": "^2.3.1",
+    "slidev-theme-vuetiful": "^0.3.1",
+    "vite": "^6.2.0",
+    "vite-svg-loader": "^5.1.0",
+    "vue": "^3.5.13"
+  }
+}
